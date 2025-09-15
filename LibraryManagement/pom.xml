@@ -11,6 +11,7 @@
 	<groupId>com.klef</groupId>
 	<artifactId>LibraryManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>LibraryManagement</name>
 	<description>Spring Boot Docker Project</description>
 	<url/>
