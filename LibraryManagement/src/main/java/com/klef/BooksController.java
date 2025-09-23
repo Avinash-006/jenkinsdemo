@@ -20,7 +20,10 @@ public class BooksController {
     public ResponseEntity<Books> addBook(@RequestBody Books book) {
         return ResponseEntity.ok(booksService.addBook(book));
     }
-
+ @PostMapping("/")
+    public String home() {
+        return "welcome";
+    }
     // Update a book
     @PutMapping("/update/{id}")
     public ResponseEntity<Books> updateBook(@PathVariable Long id, @RequestBody Books book) {
