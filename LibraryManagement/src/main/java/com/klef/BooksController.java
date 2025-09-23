@@ -20,7 +20,7 @@ public class BooksController {
     public ResponseEntity<Books> addBook(@RequestBody Books book) {
         return ResponseEntity.ok(booksService.addBook(book));
     }
- @PostMapping("/")
+ @GetMapping("/")
     public String home() {
         return "welcome";
     }
